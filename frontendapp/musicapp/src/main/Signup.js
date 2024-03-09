@@ -2,13 +2,13 @@ import React from 'react'
 import './Signup.css'
 export default function Signup() {
   return (
-    <div class="main_content">
+    <div className="main_content">
     {/* <h2 class="header" > I am in About page</h2>   */}
-    <div class="info">
+    <div className="info">
       
     {/* 
     <h1 align="center">I am in Login page</h1> */}
-    <h1 align="center">Signup Form</h1><br/><br/><br/><br/>
+    <h1 align="center">Signup Form</h1><br/><br/> 
     <div align="center">
     <div >
       

@@ -2,9 +2,9 @@ import React from 'react'
 import './Contact.css'
 export default function Contact() {
   return (
-    <div class="main_content">
+    <div className="main_content">
 {/* <h2 class="header" > I am in About page</h2>   */}
-<div class="info">
+<div className="info">
 <br/>
 <h1 align="center">Contact Form</h1><br/><br/>
 <div align="center">

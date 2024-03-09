@@ -11,8 +11,8 @@ import './MainNavBar.css'
 
 export default function MainNavBar() {
   return (
-    <div class="wrapper">
-    <div class="sidebar">
+    <div className="wrapper">
+    <div className="sidebar">
         <img className='row' src={logo} alt='logo' />
         <br/> <br/> <br/>
     <ul className='navbar'>

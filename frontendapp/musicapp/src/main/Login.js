@@ -3,9 +3,9 @@ import './Login.css'
 
 export default function Login() {
   return (
-    <div class="main_content">
+    <div className="main_content">
 {/* <h2 class="header" > I am in About page</h2>   */}
-<div class="info">
+<div className="info">
   
 {/* 
 <h1 align="center">I am in Login page</h1> */}
