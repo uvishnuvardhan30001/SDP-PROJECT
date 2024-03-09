@@ -1,0 +1,45 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(240, 0, 0, 0.941);
+    max-width: 260px;
+    max-height: 320px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border: 5px solid rgb(255, 255, 255); /* Add a 1px solid border with a light gray color */
+    padding: 40px; /* Add some padding to the card content */
+  }
+  img{
+    height: 190px;
+    width: 190px;
+  }
+  td{
+    padding-right: 130px;
+  }
+  button {
+    background: linear-gradient(to bottom right, #ff002f, #d9ff00);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+  }
+button:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  
+button:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
