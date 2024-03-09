@@ -2,8 +2,8 @@
 // import './App.css';
 import { BrowserRouter } from "react-router-dom";
 // import AdminNavBar from "./admin/AdminNavBar";
-// // import UserNavBar from "./user/UserNavBar";
-import MainNavBar from "./main/MainNavBar";
+import UserNavBar from "./user/UserNavBar";
+// import MainNavBar from "./main/MainNavBar";
 
 
 function App() {
@@ -11,9 +11,9 @@ function App() {
     <div className="App">
       
       <BrowserRouter>
-      <MainNavBar/>
-      {/* <UserNavBar/>
-      <AdminNavBar/> */}
+      {/* <MainNavBar/> */}
+      <UserNavBar/>
+      {/* <AdminNavBar/> */}
       </BrowserRouter>
     </div>
   );
