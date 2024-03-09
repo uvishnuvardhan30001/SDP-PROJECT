@@ -21,7 +21,7 @@ export default function UsersData() {
   
     const deleteuser = async (email) => {
       try {
-        await axios.delete(`http://localhost:2032/deletejobseeker/${email}`);
+        await axios.delete(`http://localhost:2032/deleteuser/${email}`);
         fetchJobSeekers();
       } catch (error) {
         console.error(error.message);
