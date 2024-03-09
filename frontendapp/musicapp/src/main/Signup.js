@@ -7,7 +7,7 @@ export default function Signup() {
     name: '',
     gender: '',
     dateofbirth: '',
-    mobileno: '',
+    contact: '',
     email: '',
     password: ''
   });
@@ -33,19 +33,27 @@ export default function Signup() {
     e.preventDefault();
     try 
     {
-      const response = await axios.post('http://localhost:2032/insertjobseeker', formData);
+      const response = await axios.post('http://localhost:2032/insertuser', formData);
       if (response.status === 200) 
       {
-        //It will set all fields to ""
+        // It will set all fields to ""
         setFormData({
           name: '',
           gender: '',
           dateofbirth: '',
-          mobileno: '',
+          contact: '',
           email: '',
           password: ''
         });
+        
+
+
       }
+      else if (response.status === 500)
+      {
+        setMessage("Error Found")
+      }
+      
       setMessage(response.data);
       setError(''); //set error to ""
     } 
@@ -95,7 +103,7 @@ export default function Signup() {
             </div>
             <div>
               <h4 align="left">Mobile No</h4>
-              <input type="text" id="mobileno" value={formData.mobileno} onChange={handleChange} required/>
+              <input type="text" id="contact" value={formData.contact} onChange={handleChange} required/>
             </div>
             <div>
               <h4 align="left">email</h4>
