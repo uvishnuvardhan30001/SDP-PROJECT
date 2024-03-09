@@ -1,6 +1,66 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Signup.css'
+import axios from 'axios';
 export default function Signup() {
+
+  const [formData, setFormData] = useState({
+    name: '',
+    gender: '',
+    dateofbirth: '',
+    mobileno: '',
+    email: '',
+    password: ''
+  });
+
+  //message state variable
+  const [message, setMessage] = useState('');
+  //error state variable
+  const [error, setError] = useState('');
+
+  const handleChange = (e) => // e stands foe event
+  {
+    
+    setFormData({...formData, [e.target.id]: e.target.value});
+    
+    // It updates the state `formData` by adding or updating a property with a key equal to 
+    //the ID of the input field 
+    //that triggered the change event (e.target.id). The value of this property is 
+    //set to the new value entered in that input field (e.target.value).
+  };
+
+  const handleSubmit = async (e) => 
+  {
+    e.preventDefault();
+    try 
+    {
+      const response = await axios.post('http://localhost:2032/insertjobseeker', formData);
+      if (response.status === 200) 
+      {
+        //It will set all fields to ""
+        setFormData({
+          name: '',
+          gender: '',
+          dateofbirth: '',
+          mobileno: '',
+          email: '',
+          password: ''
+        });
+      }
+      setMessage(response.data);
+      setError(''); //set error to ""
+    } 
+    catch(error) 
+    {
+      setError(error.response.data);
+      setMessage(''); //set message to ""
+    }
+  };
+
+
+
+
+
+
   return (
     <div className="main_content">
     {/* <h2 class="header" > I am in About page</h2>   */}
@@ -11,33 +71,44 @@ export default function Signup() {
     <h1 align="center">Signup Form</h1><br/><br/> 
     <div align="center">
     <div >
-      
-      <form>
+    {
+        message ? <h4 align="center">{message}</h4> : <h4 align="center">{error}</h4>
+      }
+      <form onSubmit={handleSubmit}>
         <br/>
             <div>
               <h4 align="left">Name</h4>
-              <input type="text" id="name" required/>
+              <input type="text" id="name" value={formData.name} onChange={handleChange} required/>
             </div>
             <div>
+          <label>Gender</label>
+          <select id="gender" value={formData.gender} onChange={handleChange} required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+            <div>
               <h4 align="left">Date of Birth</h4>
-              <input type="date" id="password" required/>
+              <input type="date" id="dateofbirth" value={formData.dateofbirth} onChange={handleChange} required/>
             </div>
             <div>
               <h4 align="left">Mobile No</h4>
-              <input type="text" id="mobileno" required/>
+              <input type="text" id="mobileno" value={formData.mobileno} onChange={handleChange} required/>
             </div>
             <div>
               <h4 align="left">email</h4>
-              <input type="email" id="email" required/>
+              <input type="email" id="email" value={formData.email} onChange={handleChange} required/>
             </div>
             <div>
           <h4 align="left">Password</h4>
-          <input type="password" id="password" required/>
+          <input type="password" id="password" value={formData.password} onChange={handleChange} required/>
         </div>
-        <div>
+        {/* <div>
           <h4 align="left">Confirm Password</h4>
           <input type="password" id="confirmpassword" required/>
-        </div>
+        </div> */}
             <button type="submit" className="button">Signup</button>
             <br/><br/>
             <h3>Already have an account? <a href='./Login.js'>Login</a></h3>
