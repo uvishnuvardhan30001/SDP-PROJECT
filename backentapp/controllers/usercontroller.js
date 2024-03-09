@@ -12,6 +12,7 @@ const checkuserlogin = async (request, response) =>
      catch (error) 
      {
        response.status(500).send(error.message);
+      
      }
    };
 
@@ -27,6 +28,7 @@ const checkuserlogin = async (request, response) =>
     catch(e) 
     {
       response.status(500).send(e.message);
+      
     }
   };
 

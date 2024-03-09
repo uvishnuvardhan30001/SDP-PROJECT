@@ -7,6 +7,8 @@ import AdminAlbum from './AdminAlbum'
 import AdminArtist from './AdminArtist'
 import UsersData from './UsersData'
 import './AdminNavBar.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faCompactDisc, faMusic, faUser, faUsers } from '@fortawesome/free-solid-svg-icons'; // Import necessary icons
 
 export default function AdminNavBar() {
   return (
@@ -15,11 +17,11 @@ export default function AdminNavBar() {
         <img className='row' src={logo} alt='logo' />
         <br/> <br/> <br/>
     <ul className='navbar'>
-    <li><Link to="/">Home</Link></li>
-    <li><Link to="/adminplaylist">Playlists</Link></li>
-    <li><Link to="/adminalbums">Albums</Link></li>
-    <li><Link to="/adminartists">Artists</Link></li>
-    <li><Link to="/usersdata">Users</Link></li>
+    <li><Link to="/"><FontAwesomeIcon icon={faHome} /> Home</Link></li>
+    <li><Link to="/adminplaylist"><FontAwesomeIcon icon={faMusic} /> Playlists</Link></li>
+    <li><Link to="/adminalbums"><FontAwesomeIcon icon={faCompactDisc} /> Albums</Link></li>
+    <li><Link to="/adminartists"><FontAwesomeIcon icon={faUser} /> Artists</Link></li>
+    <li><Link to="/usersdata"><FontAwesomeIcon icon={faUsers} /> Users</Link></li>
     </ul>
     </div>
     <Routes>

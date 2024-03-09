@@ -53,6 +53,7 @@ export default function Signup() {
       {
         setMessage("Error Found")
       }
+     
       
       setMessage(response.data);
       setError(''); //set error to ""
@@ -89,8 +90,8 @@ export default function Signup() {
               <input type="text" id="name" value={formData.name} onChange={handleChange} required/>
             </div>
             <div>
-          <label>Gender</label>
-          <select id="gender" value={formData.gender} onChange={handleChange} required>
+          <h4 align="left">Gender</h4>
+          <select  id="gender" value={formData.gender} onChange={handleChange} required>
             <option value="">Select Gender</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
@@ -103,7 +104,7 @@ export default function Signup() {
             </div>
             <div>
               <h4 align="left">Mobile No</h4>
-              <input type="text" id="contact" value={formData.contact} onChange={handleChange} required/>
+              <input type="text" id="contact" value={formData.contact} pattern="[6789][0-9]{9}" onChange={handleChange} required/>
             </div>
             <div>
               <h4 align="left">email</h4>
