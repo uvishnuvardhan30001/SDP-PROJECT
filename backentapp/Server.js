@@ -14,7 +14,9 @@ app.use(express.json()) // to parse JSON Data
 app.use(cors())
 
 const userrrouter = require("./routes/userroutes")
+const adminrouter = require("./routes/adminrouter")
 
+app.use("",adminrouter)
 app.use("",userrrouter) // it includes user routes
 
 

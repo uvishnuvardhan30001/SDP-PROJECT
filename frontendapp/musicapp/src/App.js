@@ -10,8 +10,8 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      {/* <MainNavBar/> */}
-      {/* <UserNavBar/> */}
+      {/* <MainNavBar/>
+      <UserNavBar/> */}
       <AdminNavBar/>
       </BrowserRouter>
     </div>
