@@ -9,6 +9,8 @@ import logo from '../images/logo.jpg'
 import './MainNavBar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faInfoCircle, faSignInAlt, faUserPlus, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import AdminLogin from './AdminLogin'
+
 
 
 
@@ -24,6 +26,7 @@ export default function MainNavBar() {
     <li><Link to="/about"><FontAwesomeIcon icon={faInfoCircle} /> About</Link></li>
     <li><Link to="/login"><FontAwesomeIcon icon={faSignInAlt} /> Login</Link></li>
     <li><Link to="/signup"><FontAwesomeIcon icon={faUserPlus} /> Sign Up</Link></li>
+    <li><Link to="/adminlogin"><FontAwesomeIcon icon={faSignInAlt} /> Admin Login</Link></li>
     <li><Link to="/contact"><FontAwesomeIcon icon={faEnvelope} /> Contact Us</Link></li>
     </ul>
     </div>
@@ -32,6 +35,7 @@ export default function MainNavBar() {
         <Route path="/about" Component={About}/>
         <Route path="/login" Component={Login}/>
         <Route path="/signup" Component={Signup}/>
+        <Route path="/adminlogin" Component={AdminLogin}/>
         <Route path="/contact" element={<Contact/>}/>
     </Routes>
     

@@ -28,7 +28,8 @@ export default function Login() {
       if (response.data!=null) 
       {
         console.log(response.data)
-        navigate("http://localhost:3000/user/UserNavBar.js");
+        navigate("/userhome");
+        window.location.replace('/userhome')
       } 
       else 
       {

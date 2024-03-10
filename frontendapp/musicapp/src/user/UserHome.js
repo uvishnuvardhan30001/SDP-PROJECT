@@ -4,11 +4,12 @@ import logo1 from '../images/hinanna.jpeg'
 import logo2 from'../images/devara.jpeg'
 import logo3 from '../images/gunrurkaram.jpeg'
 import logo4 from '../images/veerasimha.jpg'
+import UserNavBar from './UserNavBar'
 
 export default function UserHome() {
   return (
     <div className="main_content">
-      
+      <UserNavBar/>
     <div className="info">
       
 

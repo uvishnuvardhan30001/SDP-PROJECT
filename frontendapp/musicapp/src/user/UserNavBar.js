@@ -15,7 +15,7 @@ export default function UserNavBar() {
         <img className='row' src={logo} alt='logo' />
         <br/> <br/> <br/>
     <ul className='navbar'>
-    <li><Link to="/">Home</Link></li>
+    <li><Link to="/userhome">Home</Link></li>
     <li><Link to="/userplaylist">Playlists</Link></li>
     <li><Link to="/useralbums">Albums</Link></li>
     <li><Link to="/artists">Artists</Link></li>
@@ -23,7 +23,7 @@ export default function UserNavBar() {
     </ul>
     </div>
     <Routes>
-        <Route path="/" Component={UserHome}/>
+        <Route path="/userhome" Component={UserHome}/>
         <Route path="/userplaylist" Component={UserPlayList}/>
         <Route path="/useralbums" Component={UserAlbums}/>
         <Route path="/artists" Component={Artists}/>
