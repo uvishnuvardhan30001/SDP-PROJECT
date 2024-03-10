@@ -7,6 +7,7 @@ import UserAlbums from './UserAlbums'
 import Artists from './Artists'
 import ProfileCard from './ProfileCard'
 import './UserNavBar.css'
+import PlaySong from './PlaySong'
 
 export default function UserNavBar() {
   return (
@@ -28,6 +29,7 @@ export default function UserNavBar() {
         <Route path="/useralbums" Component={UserAlbums}/>
         <Route path="/artists" Component={Artists}/>
         <Route path="/profilecard" element={<ProfileCard/>}/>
+        <Route path='/playsong' Component={PlaySong}/>
     </Routes>
 
     </div>
