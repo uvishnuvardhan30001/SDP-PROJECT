@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Login.css'
+import './Contact.css'
 import axios from 'axios';
 import { Link, Route, Routes, useNavigate } from 'react-router-dom';
 import Signup from './Signup';
@@ -29,7 +29,7 @@ export default function Login() {
       {
         console.log(response.data)
         navigate("/userhome");
-        window.location.replace('/userhome')
+        window.location.replace('/about')
       } 
       else 
       {

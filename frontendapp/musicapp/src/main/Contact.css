@@ -12,6 +12,48 @@ input[type=text] {
   resize: vertical;
   background-color: #ffffff;
 }
+.link{
+  color: #ffffff;
+}
+form {
+  border-radius: 5px;
+  background-color: #867b7b;
+  padding: 20px;
+  width: 25%;
+  height: auto;
+  opacity: 0.8;
+  
+}
+select
+{
+  width: 320px;
+  padding: 12px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: #ffffff;
+}
+input[type=date] 
+{
+  width: 320px;
+  padding: 12px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: #ffffff;
+}
+
+label {
+color: rgb(246, 242, 242);
+align:left
+}
+
 
 input[type=password] 
 {
