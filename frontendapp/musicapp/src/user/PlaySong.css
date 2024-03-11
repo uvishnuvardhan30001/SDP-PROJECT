@@ -1,5 +1,5 @@
 .play{
-    height: 400px;
+    height: 450px;
     width: 1497px;
 }
 td{
@@ -19,7 +19,7 @@ td{
   #customers tr:nth-child(odd){background-color: #b55c5c;}
   #customers tr:nth-child(even){background-color: #8a7c7c;}
   
-  #customers tr:hover {background-color: #ddd;}
+  /* #customers tr:hover {background-color: #ddd;} */
   
   #customers th {
     padding-top: 12px;

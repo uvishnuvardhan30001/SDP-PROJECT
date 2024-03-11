@@ -17,7 +17,7 @@
   td{
     padding-right: 130px;
   }
-  button {
+  .home {
     background: linear-gradient(to bottom right, #ff002f, #d9ff00);
     border: 0;
     border-radius: 12px;

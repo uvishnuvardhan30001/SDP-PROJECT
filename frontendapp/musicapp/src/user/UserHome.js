@@ -21,7 +21,7 @@ export default function UserHome() {
                   <img src={logo1} alt='imaf' />
                   <h3>HiNanna</h3>
                   <Link to="/playsong">
-                    <button>Play</button>
+                    <button className='home'>Play</button>
                   </Link>
                   
                 </div>
@@ -30,21 +30,21 @@ export default function UserHome() {
                 <div className="card">
                   <img src={logo2} alt='imafr' />
                   <h3>Devara: Part 1</h3>
-                  <button>Play</button>
+                  <button className='home'>Play</button>
                 </div>
               </td>
               <td>
                 <div className="card">
                   <img src={logo3} alt='imafr' />
                   <h3>Guntur Karam</h3>
-                  <button>Play</button>
+                  <button className='home'>Play</button>
                 </div>
               </td>
               <td>
                 <div className="card">
                   <img src={logo4} alt='imafr' />
                   <h3>Veera Simha Reddy</h3>
-                 <button>Play</button>
+                 <button className='home'>Play</button>
                 </div>
               </td>
             </tr>
