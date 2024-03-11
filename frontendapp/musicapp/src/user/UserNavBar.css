@@ -11,6 +11,7 @@
   
    body{
      background-image: url('../images/bgimg.jpg');
+     /* background-color: #363232; */
   }
    
   .wrapper{
@@ -98,7 +99,7 @@
   }
   
   .wrapper .main_content .info{
-    margin: 20px;
+    margin: 10px;
     color: #ffffff;
     line-height: 25px;
   }
