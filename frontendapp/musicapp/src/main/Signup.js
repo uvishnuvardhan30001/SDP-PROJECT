@@ -120,7 +120,7 @@ export default function Signup() {
         </div> */}
             <button type="submit" className="button">Signup</button>
             <br/><br/>
-            <h3>Already have an account? <a href='./Login.js'>Login</a></h3>
+            <h3>Already have an account? <a href='/Login'>Login</a></h3>
           </form>
     </div>
     

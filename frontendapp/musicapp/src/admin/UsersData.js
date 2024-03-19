@@ -38,7 +38,7 @@ export default function UsersData() {
       <h1>Users</h1>
       <br/><br/><br/>
       <div style={{align:'center'}}>
-      <table border={1}  style={{ width: 'auto', height: 'auto' }} id="table" >
+      <table id="seekerdata" border={1}    >
           <thead>
             <tr>
               <th>Name</th>

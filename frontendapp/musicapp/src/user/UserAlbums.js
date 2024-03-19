@@ -17,22 +17,22 @@ export default function UserAlbums() {
     <br/>
     <table>
     
-      <td><div className="card">
+      <td className='carddemo'><div className="card">
                 <img src={logo1} alt='imaf'/>
                 <h3>The Stooges</h3>
                 <button className='home'>Play</button>
             </div></td>
-            <td><div className="card">
+            <td className='carddemo'><div className="card">
                 <img src={logo2 }alt='imafr'/>
                 <h3>Melodrama</h3>
                 <button className='home'>Play</button>
             </div></td>
-            <td><div className="card">
+            <td className='carddemo'><div className="card">
                 <img src={logo3}alt='imafr'/>
                 <h3>Thriller</h3>
                 <button className='home'>Play</button>
             </div></td>
-            <td><div className="card">
+            <td className='carddemo'><div className="card">
                 <img src={logo4}alt='imafr'/>
                 <h3>Rakshak</h3>
                 <button className='home'>Play</button>

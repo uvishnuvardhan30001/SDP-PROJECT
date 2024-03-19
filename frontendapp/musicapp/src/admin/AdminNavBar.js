@@ -1,6 +1,6 @@
 import React from 'react'
 import {Routes,Route,Link} from 'react-router-dom'
-import logo from '../images/logo.jpg'
+import logo from '../images/logo.png'
 import AdminHome from './AdminHome'
 import AdminPlayList from './AdminPlayList'
 import AdminAlbum from './AdminAlbum'

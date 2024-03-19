@@ -111,11 +111,41 @@
     margin-bottom: 20px;
   
   }
+  .wrapper {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #333;
+    padding: 20px;
+  }
+  
+  .navbar {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin-bottom: 10px;
+  }
+  
+  .navbar li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar li a svg {
+    margin-right: 10px;
+  }
+  
   .row{
-      height: 131px;
+      height: 90px;
       margin-top: -10px;
       margin-left: 10px;
-      width: 160px;
+      width: 190px;
       border-radius: 8%;
      
   }
@@ -126,3 +156,5 @@
       margin-top: 10px;
       display: flex;
   }
+
+  

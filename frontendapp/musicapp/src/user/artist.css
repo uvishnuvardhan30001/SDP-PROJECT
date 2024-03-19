@@ -1,22 +1,22 @@
-.card {
+.acard {
     box-shadow: 0 4px 8px 0 rgba(255, 251, 0, 0.941);
-    max-width: 260px;
-    max-height: 280px;
+    max-width: 560px;
+    max-height: 300px;
     margin:auto;
     text-align: center;
     text-size-adjust: auto;
     font-family: arial;
-    border: 2px solid rgb(255, 255, 255); /* Add a 1px solid border with a light gray color */
+    border: 3px solid rgb(255, 255, 255); /* Add a 1px solid border with a light gray color */
     padding: 40px; /* Add some padding to the card content */
   }
-  img{
-    height: 150px;
-    width: 150px;
-    margin-top: -20px;
+  artist{
+    height: 380px;
+    width: 380px;
+    margin-top: 0px;
     border-radius: 15px;
   }
-  .carddemo{
-    padding-right: 130px;
+  .art{
+    padding-right: 110px;
   }
   .thdemo
   {

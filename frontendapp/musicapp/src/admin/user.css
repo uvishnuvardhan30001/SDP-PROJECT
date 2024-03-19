@@ -2,6 +2,7 @@
     font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   
+  
 }
 #seekerdata td, #seekerdata th {
     border: 1px solid #ddd;
@@ -9,23 +10,24 @@
     text-align: center;
   }
   
-  #seekerdata tr:nth-child(even){background-color: #6bdfdd;}
+  #seekerdata tr:nth-child(even){background-color: #a85b5b;opacity: 0.8;}
+  #seekerdata tr:nth-child(odd){background-color: #515151;opacity: 0.8;}
   
-  #seekerdata tr:hover {background-color: #ddd;}
+
   
   #seekerdata th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
     background-color: #00acaa;
-    color: rgb(250, 0, 0);
+    color: rgb(255, 255, 255);
   }
 h1{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 50px;
     
 }
-#table {
+/* #table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
@@ -46,7 +48,7 @@ h1{
     text-align: left;
     background-color: #04AA6D;
     color: white;
-  }
+  } */
 
  
 button {

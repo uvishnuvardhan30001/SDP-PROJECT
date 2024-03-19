@@ -5,7 +5,7 @@ import About from './About'
 import Login from './Login'
 import Signup from './Signup'
 import Contact from './Contact'
-import logo from '../images/logo.jpg'
+import logo from '../images/logo.png'
 import './MainNavBar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faInfoCircle, faSignInAlt, faUserPlus, faEnvelope } from '@fortawesome/free-solid-svg-icons';
